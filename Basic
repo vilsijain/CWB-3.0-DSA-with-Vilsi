@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {  // Correct array initialization
+    int arr[6] = {1,233,4,65,7,4};
+    // Modify individual elements
+    arr[2] = 3;  // Example: changing the third element to 3
+    cout << arr[2] << endl;  // Print the third element
+
+    arr[2] = 4;  // Example: changing the third element to 6 again
+    cout << arr[2] << endl;
+    return 0;
+}
+Output
+3
+4
