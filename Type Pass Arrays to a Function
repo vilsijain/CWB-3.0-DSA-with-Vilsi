@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+void printArraySized(int arr[4], int n)
+{
+    cout << "Array as Sized Array Argument: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+// passing array as an unsized array argument
+void printArrayUnsized(int arr[], int n)
+{
+    cout << "Array as Unsized Array Argument: ";
+    for (int i = 0; i < n; i++) {
+        cout << *(arr + i) << " ";
+    }
+    cout << endl;
+}
+
+// Passing array as a pointer argument
+void printArrayPointer(int* ptr, int n)
+{
+    // Print array elements using pointer ptr
+    // that store the address of array passed
+    cout << "Array as Pointer Argument: ";
+    for (int i = 0; i < n; i++) {
+        cout << ptr[i] << " ";
+    }
+}
+
+int main()
+{
+
+    int arr[] = { 3, 6, 7,6 };
+    printArraySized(arr, 4);
+    printArrayUnsized(arr, 4);
+    printArrayPointer(arr, 4);
+    return 0;
+}
