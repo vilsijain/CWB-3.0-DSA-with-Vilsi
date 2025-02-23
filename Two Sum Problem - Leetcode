@@ -13,3 +13,8 @@ public:
 };
 
 Time complexity - 0(N^2)
+
+//Shorthand way 
+return{}; 
+return std::vector<int>();
+// return an empty vector
