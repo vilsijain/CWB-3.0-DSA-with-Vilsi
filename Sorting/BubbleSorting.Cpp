@@ -13,6 +13,12 @@ void bubbleSort(vector<int>& arr){
             if(arr[j]>arr[j+1]){
             swap(arr[j],arr[j+1]);
             swapped=true;
+
+//if you want swap with temp 
+// if (arr[j] > arr[j + 1]) {
+               // int temp = arr[j + 1];
+               // arr[j + 1] = arr[j];
+               // arr[j] = temp;
         }
     }
     if(!swapped)
