@@ -1,4 +1,3 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -31,3 +30,6 @@ int main() {
     printVector(arr);
     return 0;
 }
+
+Time Complexity - O(n^2)
+Space Complexity - O(1)
